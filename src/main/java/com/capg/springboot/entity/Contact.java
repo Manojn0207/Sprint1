@@ -11,7 +11,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Table(name="contact")
 public class Contact {
 	private int customerId;
-	private String type;
+	//private String type;
 	private String addressLine;
 	private long zipCode;
 	private String city;
@@ -33,12 +33,12 @@ public class Contact {
 	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
-	public String getType() {
+	/*public String getType() {
 		return type;
 	}
 	public void setType(String type) {
 		this.type = type;
-	}
+	}*/
 	public String getAddressLine() {
 		return addressLine;
 	}

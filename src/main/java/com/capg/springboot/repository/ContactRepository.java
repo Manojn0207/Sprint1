@@ -1,4 +1,6 @@
 package com.capg.springboot.repository;
+import java.util.Optional;
+
 import com.capg.springboot.entity.*;
 import com.capg.springboot.exceptions.*;
 public interface ContactRepository {
@@ -14,6 +16,10 @@ public interface ContactRepository {
 	Contact save(Contact add);
 
 	Contact updateContact(Contact add);
+
+	Contact modifyContact(Contact contact, int customerId);
+
+	Optional<Contact> findById(int customerId);
 
 
 }
